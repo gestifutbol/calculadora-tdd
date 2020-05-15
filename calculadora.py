@@ -1,3 +1,6 @@
+import sys
+
+
 class Calculadora:
 
     def __init__(self):
@@ -43,3 +46,17 @@ class Calculadora:
         else:
             self.value = res
 
+
+if __name__ == "__main__":
+    c = Calculadora()
+    switcher = {
+        "add": lambda: c.add(int(sys.argv[2]), int(sys.argv[3])),
+        "substract": lambda: c.substract(int(sys.argv[2]), int(sys.argv[3])),
+        "div": lambda: c.div(int(sys.argv[2]), int(sys.argv[3])),
+        "multiply": lambda: c.multiply(int(sys.argv[2]), int(sys.argv[3])),
+        "sqrt": lambda: c.sqrt(float(sys.argv[2]))
+    }
+
+    func = switcher.get(sys.argv[1])
+    func()
+    print(c.value)
