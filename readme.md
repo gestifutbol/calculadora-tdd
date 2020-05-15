@@ -24,5 +24,5 @@ The main functionalities are:
 	- python calculadora.py add 2 3
 	- python calculadora.py substract 2 3
 	- python calculadora.py div 2 3
-	- python calculadora.py div 4 2
+	- python calculadora.py multiply 4 2
 	- python calculadora sqrt 7
