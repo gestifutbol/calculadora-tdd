@@ -25,3 +25,14 @@ class TestCaseCalculadora(unittest.TestCase):
     def test_substract_10_and_5(self):
         self.calc.substract(10, 5)
         self.assertEqual(5, self.calc.value)
+
+    def test_div_6_between_2(self):
+        self.calc.div(6, 2)
+        self.assertEqual(3, self.calc.value)
+
+    def test_div_8_between_2(self):
+        self.calc.div(8, 2)
+        self.assertEqual(4, self.calc.value)
+
+    def test_div_between_0_should_launch_zerodivisionerror(self):
+        self.assertRaises(ZeroDivisionError, self.calc.div, 5, 0)

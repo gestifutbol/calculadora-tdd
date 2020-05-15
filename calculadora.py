@@ -8,3 +8,7 @@ class Calculadora:
 
     def substract(self, a, b):
         self.value = a - b
+
+    def div(self, a, b):
+        self.value = a / b
+
