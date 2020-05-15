@@ -6,3 +6,5 @@ class Calculadora:
     def add(self, a, b):
         self.value = a + b
 
+    def substract(self, a, b):
+        self.value = a - b

@@ -17,3 +17,11 @@ class TestCaseCalculadora(unittest.TestCase):
     def test_add_4_and_6(self):
         self.calc.add(4, 6)
         self.assertEqual(10, self.calc.value)
+
+    def test_substract_5_and_6(self):
+        self.calc.substract(5, 6)
+        self.assertEqual(-1, self.calc.value)
+
+    def test_substract_10_and_5(self):
+        self.calc.substract(10, 5)
+        self.assertEqual(5, self.calc.value)
