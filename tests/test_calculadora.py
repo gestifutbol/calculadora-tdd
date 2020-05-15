@@ -36,3 +36,12 @@ class TestCaseCalculadora(unittest.TestCase):
 
     def test_div_between_0_should_launch_zerodivisionerror(self):
         self.assertRaises(ZeroDivisionError, self.calc.div, 5, 0)
+
+    def test_multiply_5_by_2(self):
+        self.calc.multiply(5, 2)
+        self.assertEqual(10, self.calc.value)
+
+    def test_multiply_by_0(self):
+        self.calc.multiply(5, 0)
+        self.assertEqual(0, self.calc.value)
+

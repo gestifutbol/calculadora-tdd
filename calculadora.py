@@ -12,3 +12,6 @@ class Calculadora:
     def div(self, a, b):
         self.value = a / b
 
+    def multiply(self, a, b):
+        self.value = a * b
+
