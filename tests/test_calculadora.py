@@ -45,3 +45,19 @@ class TestCaseCalculadora(unittest.TestCase):
         self.calc.multiply(5, 0)
         self.assertEqual(0, self.calc.value)
 
+    def test_sqrt_of_9(self):
+        self.calc.sqrt(9)
+        self.assertEqual(3, self.calc.value)
+
+    def test_sqrt_of_5(self):
+        self.calc.sqrt(5)
+        self.assertAlmostEqual(2.2360679775, self.calc.value, 5)
+
+    def test_sqrt_of_95(self):
+        self.calc.sqrt(64)
+        self.assertAlmostEqual(8, self.calc.value, 5)
+
+    def test_sqrt_of_95(self):
+        self.calc.sqrt(95)
+        self.assertAlmostEqual(9.74679434481, self.calc.value, 5)
+
